@@ -6,7 +6,6 @@ ___
 ```php
 __construct(string $date, string $timeZone = "Europe/Oslo");
 ```
-___
 | Parameter | Description |
 |--|--|
 | string $date | Date/time to calculate difference from current date/time. Time is optional |
@@ -23,7 +22,6 @@ ___
 ```php
 $time->getTimeFrame();
 ```
-___
 | Parameter | Description |
 |--|--|
 | return string | Formatted as: (Stops at first match, in the order below). |
@@ -40,7 +38,6 @@ ___
 ```php
 $time->getTime();
 ```
-___
 | Parameter | Description |
 |--|--|
 | return string | Example output: 1 year 11 months 29 days 21 hours 56 minutes 36 seconds. |
