@@ -4,7 +4,7 @@ ___
 ### Initiating
 ##### Initiate by creating a new DateAndTime() object.
 ```php
-__construct(string $date, string $timeZone = "Europe/Oslo")
+__construct(string $date, string $timeZone = "Europe/Oslo");
 ```
 ___
 | Parameter | Description |
