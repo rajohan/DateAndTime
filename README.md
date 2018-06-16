@@ -42,3 +42,22 @@ $time->getTime();
 |--|--|
 | return string | Example output: 1 year 11 months 29 days 21 hours 56 minutes 36 seconds. |
 ___
+### Get years
+##### Get the time difference in years.
+```php
+$time->getYears();
+```
+| Parameter | Description |
+|--|--|
+| return int | Example output: 1 |
+___
+### Get months
+##### Get the time difference in months.
+```php
+$time->getMonths();
+```
+| Parameter | Description |
+|--|--|
+| return int | Example output: 12 |
+___
+
