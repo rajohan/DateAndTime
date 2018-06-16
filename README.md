@@ -1,5 +1,5 @@
 # DateAndTime
-date time
+This is my DateAndTime class to make it easier to do work with date and time. 
 ___
 ### Initiating
 ##### Initiate by creating a new DateAndTime() object.
