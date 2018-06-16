@@ -36,5 +36,6 @@ ___
 | | Seconds <= 30: Just now |
 ##### Example outputs:
 1 year ago
+
 1 month 3 days ago
 ___
