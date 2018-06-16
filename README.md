@@ -34,8 +34,4 @@ ___
 | | Minutes >= 1 i minute(s) ago |
 | | Seconds > 30: s seconds ago |
 | | Seconds <= 30: Just now |
-##### Example outputs:
-1 year ago
-
-1 month 3 days ago
 ___
