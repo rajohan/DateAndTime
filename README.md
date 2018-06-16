@@ -132,3 +132,4 @@ $time->getNanoseconds();
 |--|--|
 | return int | Example output: 31554000000000000 |
 ___
+### Licensed under the MIT License.
