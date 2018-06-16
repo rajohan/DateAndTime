@@ -35,3 +35,13 @@ ___
 | | Seconds > 30: s seconds ago |
 | | Seconds <= 30: Just now |
 ___
+### Get time
+##### Get the time difference.
+```php
+$time->getTime();
+```
+___
+| Parameter | Description |
+|--|--|
+| return string | Example output: 1 year 11 months 29 days 21 hours 56 minutes 36 seconds. |
+___
