@@ -60,4 +60,75 @@ $time->getMonths();
 |--|--|
 | return int | Example output: 12 |
 ___
-
+### Get weeks
+##### Get the time difference in weeks.
+```php
+$time->getWeeks();
+```
+| Parameter | Description |
+|--|--|
+| return int | Example output: 52 |
+___
+### Get days
+##### Get the time difference in days.
+```php
+$time->getDays();
+```
+| Parameter | Description |
+|--|--|
+| return int | Example output: 365 |
+___
+### Get hours
+##### Get the time difference in hours.
+```php
+$time->getHours();
+```
+| Parameter | Description |
+|--|--|
+| return int | Example output: 8765 |
+___
+### Get minutes
+##### Get the time difference in minutes.
+```php
+$time->getMinutes();
+```
+| Parameter | Description |
+|--|--|
+| return int | Example output: 525900 |
+___
+### Get seconds
+##### Get the time difference in seconds.
+```php
+$time->getMinutes();
+```
+| Parameter | Description |
+|--|--|
+| return int | Example output: 31554000 |
+___
+### Get milliseconds
+##### Get the time difference in milliseconds.
+```php
+$time->getMilliseconds();
+```
+| Parameter | Description |
+|--|--|
+| return int | Example output: 31554000000 |
+___
+### Get microseconds
+##### Get the time difference in microseconds.
+```php
+$time->getMicroseconds();
+```
+| Parameter | Description |
+|--|--|
+| return int | Example output: 31554000000000 |
+___
+### Get nanoseconds
+##### Get the time difference in nanoseconds.
+```php
+$time->getNanoseconds();
+```
+| Parameter | Description |
+|--|--|
+| return int | Example output: 31554000000000000 |
+___
