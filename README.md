@@ -28,9 +28,9 @@ ___
 |--|--|
 | return string | Formatted as: (Stops at first match, in the order below). |
 | | Years >= 1: y year(s) ago |
-||| Days == 0: m month(s) ago |
-||| Days > 0: m month(s) d day(s) ago |
-| | Months >= 1: m month(s) d day(s) ago |
+| | Months >= 1:
+Days == 0: m month(s) ago
+Days > 0: m month(s) d day(s) ago |
 ##### Example:
 ```php
 $time = new DateAndTime("2017-06-16");
@@ -40,7 +40,7 @@ ___
 
 @return string - Formatted as: (Stops at first match, in the order below).
      *                                  - Years >= 1: y year(s) ago
-     *                                  - Months >= 1: m month(s) d day(s) ago
+     *                                  - Months >= 1:
      *                                        - Days == 0: m month(s) ago
      *                                        - Days > 0: m month(s) d day(s) ago
      *                                  - Days >= 1:
