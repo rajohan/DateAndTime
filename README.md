@@ -29,13 +29,12 @@ ___
 | return string | Formatted as: (Stops at first match, in the order below). |
 | | Years >= 1: y year(s) ago |
 | | Months >= 1: Days == 0: m month(s) ago OR Days > 0: m month(s) d day(s) ago |
-| | Days >= 1: Days == 1: Yesterday OR Days > 1 d days ago |
+| | Days >= 1: Days == 1: Yesterday OR Days > 1: d days ago |
 | | Hours >= 1: h hour(s) ago |
 | | Minutes >= 1 i minute(s) ago |
 | | Seconds > 30: s seconds ago |
 | | Seconds <= 30: Just now |
-##### Example:
-```php
-$time = new DateAndTime("2017-06-16");
-```
+##### Example outputs:
+1 year ago
+1 month 3 days ago
 ___
