@@ -99,7 +99,7 @@ ___
 ### Get seconds
 ##### Get the time difference in seconds.
 ```php
-$time->getMinutes();
+$time->getSeconds();
 ```
 | Parameter | Description |
 |--|--|
