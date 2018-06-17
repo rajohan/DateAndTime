@@ -56,7 +56,7 @@ class DateAndTime
      *
      * @return string - Formatted as: (Stops at first match, in the order below).
      *                                  - Years >= 1: y year(s) ago
-     *                                  - Months >= 1: m month(s) d day(s) ago
+     *                                  - Months >= 1:
      *                                        - Days == 0: m month(s) ago
      *                                        - Days > 0: m month(s) d day(s) ago
      *                                  - Days >= 1:
@@ -258,42 +258,38 @@ class DateAndTime
      */
     private function timeFormatted()
     {
+        $years = $months = $days = $hours = $minutes = $seconds = "";
+
         if($this->interval->y !== 0) {
-            $years = $this->interval->y > 1 ? " years " : "year";
-        } else {
-            $years = "";
+            $years = $this->interval->y;
+            $years .= $this->interval->y > 1 ? " years " : " year ";
         }
 
         if($this->interval->m !== 0) {
-            $months = $this->interval->m > 1 ? " months " : " month ";
-        } else {
-            $months = "";
+            $months = $this->interval->m;
+            $months .= $this->interval->m > 1 ? " months " : " month ";
         }
 
         if($this->interval->d !== 0) {
-            $days = $this->interval->d > 1 ? " days " : " day ";
-        } else {
-            $days = "";
+            $days = $this->interval->d;
+            $days .= $this->interval->d > 1 ? " days " : " day ";
         }
 
         if($this->interval->h !== 0) {
-            $hours = $this->interval->h > 1 ? " hours " : " hour ";
-        } else {
-            $hours = "";
+            $hours = $this->interval->h;
+            $hours .= $this->interval->h > 1 ? " hours " : " hour ";
         }
 
         if($this->interval->i !== 0) {
-            $minutes = $this->interval->i > 1 ? " minutes " : " minute ";
-        } else {
-            $minutes = "";
+            $minutes = $this->interval->i;
+            $minutes .= $this->interval->i > 1 ? " minutes " : " minute ";
         }
 
         if($this->interval->s !== 0) {
-            $seconds = $this->interval->s > 1 ? " seconds " : " second ";
-        } else {
-            $seconds = "";
+            $seconds = $this->interval->s;
+            $seconds .= $this->interval->s > 1 ? " seconds " : " second ";
         }
 
-        return $this->interval->format("%y $years %m $months %d $days %h $hours %i $minutes %s $seconds");
+        return $years . $months . $days . $hours . $minutes . $seconds;
     }
 }
