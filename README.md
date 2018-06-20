@@ -4,7 +4,7 @@ ___
 ### Initiating
 ##### Initiate by creating a new DateAndTime() object.
 ```php
-__construct(string $date, string $timeZone = "Europe/Oslo");
+__construct(string $date);
 ```
 | Parameter | Description |
 |--|--|
@@ -14,7 +14,7 @@ __construct(string $date, string $timeZone = "Europe/Oslo");
 | | Supported time zones: http://php.net/manual/en/timezones.php |
 ##### Example:
 ```php
-$time = new DateAndTime("2017-06-16 00:55:35", "Europe/Oslo");
+$time = new DateAndTime("2017-06-16 00:55:35");
 ```
 ___
 ### Get time frame
