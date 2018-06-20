@@ -42,7 +42,7 @@ class DateAndTime
      * @param string $date     - (Y-m-d H:i:s 2017-06-16 00:55:35) Date/time to calculate difference from current date/time
      *                            Time is optional. d-m-Y H:i:s format will also work as expected.
      */
-    public function __construct(string $date, string $timeZone = "Europe/Oslo")
+    public function __construct(string $date)
     {
         $this->timeZone = new DateTimeZone(date_default_timezone_get());
         $this->date = new DateTime($date, $this->timeZone);
